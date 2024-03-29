@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="notes-styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, <span id="username"></span>!</h2>
+        <button id="add-note-btn">Add Note</button>
+        <ul id="notes-list"></ul>
+        <button id="logout-btn">Logout</button>
+    </div>
+
+    <!-- Dialog box for adding/editing notes -->
+    <div id="note-dialog" title="Add Note">
+        <form id="note-form">
+            <input type="text" id="note-title" placeholder="Note Title"><br><br>
+            <textarea id="note-content" placeholder="Note Content"></textarea>
+        </form>
+    </div>
+
+    <!-- jQuery and jQuery UI libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- JavaScript file for notes functionality -->
+    <script src="notes.js"></script>
+</body>
+</html>
